@@ -1,3 +1,4 @@
+/* Mejoras visuales: diseño tipo card con Flexbox y Grid */
 /* ===== Reset básico y variables ===== */
 :root{
   --bg: #0f172a;
@@ -237,4 +238,6 @@ label{
   margin-top: 12px;
   display: flex;
   justify-content: flex-end;
+
 }
+Agregar estilos con Flexbox y diseño tipo card
