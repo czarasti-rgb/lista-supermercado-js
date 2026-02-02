@@ -1,3 +1,4 @@
+// Lógica principal para productos dinámicos y persistencia con localStorage
 /* =========================
    App: Lista de Supermercado
    Requisitos:
@@ -233,4 +234,6 @@ clearAllBtn.addEventListener("click", () => {
 
 /* ====== Inicialización ====== */
 loadFromLocalStorage();
+
 renderList();
+Implementar lógica JavaScript para manejo de productos
