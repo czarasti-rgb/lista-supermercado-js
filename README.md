@@ -40,6 +40,7 @@ Aplicación web tipo lista de supermercado que permite agregar productos con can
 ---
 
 ## Uso responsable de IA (EVIDENCIA)
+Probé manualmente la aplicación y ajusté validaciones y mensajes de error.
 **Prompts utilizados (ejemplos):**
 1. "Explícame cómo guardar y recuperar un arreglo de objetos en localStorage con JSON.stringify y JSON.parse."
 2. "Dame un ejemplo de createElement para construir un <li> con botones y eventos."
@@ -57,4 +58,6 @@ Aplicación web tipo lista de supermercado que permite agregar productos con can
 
 **Declaración obligatoria (Opción A):**
 Declaro que utilicé Inteligencia Artificial como apoyo para comprender partes del proyecto.
+
 El código fue adaptado, modificado y entendido por mí.
+Completar documentación y uso responsable de IA
