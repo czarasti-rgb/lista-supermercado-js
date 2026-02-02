@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lista de Supermercado</title>
+
+  <!-- Enlace a CSS (requisito) -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- HEADER semántico -->
+  <header class="app-header">
+    <h1>🛒 Lista de Supermercado</h1>
+    <p class="subtitle">Agrega productos, márcalos como comprados y guarda tu lista.</p>
+  </header>
+
+  <!-- MAIN semántico -->
+  <main class="app-main">
+    <!-- SECTION semántico -->
+    <section class="card" aria-labelledby="titulo-form">
+      <h2 id="titulo-form">Agregar producto</h2>
+
+      <!-- Formulario obligatorio: texto + número + botón -->
+      <form id="productForm" class="form">
+        <!-- Comentario explicativo: input de nombre -->
+        <!-- input text: nombre del producto -->
+        <div class="field">
+          <label for="productName">Producto</label>
+          <input
+            type="text"
+            id="productName"
+            class="input"
+            placeholder="Ej: Leche"
+            autocomplete="off"
+          />
+        </div>
+
+        <!-- Comentario explicativo: input numérico -->
+        <!-- input number: cantidad del producto -->
+        <div class="field">
+          <label for="productQty">Cantidad</label>
+          <input
+            type="number"
+            id="productQty"
+            class="input"
+            placeholder="Ej: 2"
+            min="1"
+          />
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+          Agregar
+        </button>
+      </form>
+
+      <!-- Contenedor para mensajes (errores/confirmaciones) -->
+      <div id="messageBox" class="message" role="status" aria-live="polite"></div>
+    </section>
+
+    <!-- SECTION para lista y contadores -->
+    <section class="card" aria-labelledby="titulo-lista">
+      <div class="list-header">
+        <h2 id="titulo-lista">Tu lista</h2>
+
+        <!-- Contadores obligatorios -->
+        <div class="counters">
+          <span class="badge" id="totalCount">Total: 0</span>
+          <span class="badge badge-success" id="boughtCount">Comprados: 0</span>
+          <span class="badge badge-warning" id="pendingCount">Pendientes: 0</span>
+        </div>
+      </div>
+
+      <!-- Lista dinámica -->
+      <ul id="productList" class="list" aria-label="Lista de productos">
+        <!-- Aquí se insertan los <li> con JavaScript usando createElement -->
+      </ul>
+
+      <!-- Acción extra opcional (no obliga, pero suma) -->
+      <div class="actions">
+        <button id="clearAllBtn" class="btn btn-danger" type="button">
+          Borrar todo
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER semántico -->
+  <footer class="app-footer">
+    <small>Hecho con HTML, CSS y JavaScript. Persistencia con localStorage.</small>
+  </footer>
+
+  <!-- Enlace a JS (requisito) -->
+  <script src="script.js"></script>
+</body>
+</html>
